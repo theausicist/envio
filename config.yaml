@@ -1,0 +1,25 @@
+name: Ruscet Indexer
+networks:
+    - id: 0
+      start_block: 0
+      contracts:
+          - name: PositionRouter
+            address: 0xf020a49226ed974aa670bf03e7140d8a6faf5031923721aedd2ff16420dfc2ab
+            abi_file_path: ./abis/position-router-abi.json
+            handler: ./src/PositionRouterHandler.ts
+            events:
+                - name: CreateIncreasePosition
+                - name: CreateDecreasePosition
+
+          - name: Vault
+            address: 0x066c6edd96e0e0faa74329bd94b6249e031abb4ea0c8658b7f4f435ac8ffa74e
+            abi_file_path: ./abis/vault-abi.json
+            handler: ./src/VaultHandler.ts
+            events:
+                - name: IncreasePosition
+                - name: DecreasePosition
+                - name: UpdatePosition
+                - name: ClosePosition
+                - name: LiquidatePosition
+                - name: CollectMarginFees
+                - name: Swap

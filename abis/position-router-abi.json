@@ -1,0 +1,1533 @@
+{
+  "encoding": "1",
+  "types": [
+    {
+      "typeId": 0,
+      "type": "()",
+      "components": [],
+      "typeParameters": null
+    },
+    {
+      "typeId": 1,
+      "type": "(_, _, _, _)",
+      "components": [
+        {
+          "name": "__tuple_element",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "__tuple_element",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "__tuple_element",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "__tuple_element",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 2,
+      "type": "b256",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 3,
+      "type": "bool",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 4,
+      "type": "enum Error",
+      "components": [
+        {
+          "name": "PositionRouterAlreadyInitialized",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "PositionRouterForbidden",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "PositionRouterExpectedPositionKeeper",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "PositionRouterExpectedCallerToBeKeeper",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "PositionRouterExpectedCallerToBeAccount",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "PositionRouterFeeTooLow",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "PositionRouterInvalidPathLen",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "PositionRouterDelay",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "PositionRouterExpired",
+          "type": 0,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 5,
+      "type": "generic T",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 6,
+      "type": "raw untyped ptr",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 7,
+      "type": "struct Account",
+      "components": [
+        {
+          "name": "value",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "is_contract",
+          "type": 3,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 8,
+      "type": "struct AssetId",
+      "components": [
+        {
+          "name": "bits",
+          "type": 2,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 9,
+      "type": "struct Callback",
+      "components": [
+        {
+          "name": "callback_target",
+          "type": 12,
+          "typeArguments": null
+        },
+        {
+          "name": "success",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "callback_gas_limit",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 10,
+      "type": "struct CancelDecreasePosition",
+      "components": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "path",
+          "type": 17,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "acceptable_price",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "min_out",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "block_gap",
+          "type": 28,
+          "typeArguments": null
+        },
+        {
+          "name": "time_gap",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 11,
+      "type": "struct CancelIncreasePosition",
+      "components": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "path",
+          "type": 17,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "amount_in",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "min_out",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "acceptable_price",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "block_gap",
+          "type": 28,
+          "typeArguments": null
+        },
+        {
+          "name": "time_gap",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 12,
+      "type": "struct ContractId",
+      "components": [
+        {
+          "name": "bits",
+          "type": 2,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 13,
+      "type": "struct CreateDecreasePosition",
+      "components": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "path",
+          "type": 17,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "acceptable_price",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "min_out",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "index",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "queue_index",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "block_height",
+          "type": 28,
+          "typeArguments": null
+        },
+        {
+          "name": "block_time",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 14,
+      "type": "struct CreateIncreasePosition",
+      "components": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "path",
+          "type": 17,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "amount_in",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "min_out",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "acceptable_price",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "index",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "queue_index",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "block_height",
+          "type": 28,
+          "typeArguments": null
+        },
+        {
+          "name": "block_time",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 15,
+      "type": "struct ExecuteDecreasePosition",
+      "components": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "path",
+          "type": 17,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "acceptable_price",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "min_out",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "block_gap",
+          "type": 28,
+          "typeArguments": null
+        },
+        {
+          "name": "time_gap",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 16,
+      "type": "struct ExecuteIncreasePosition",
+      "components": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "path",
+          "type": 17,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "amount_in",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "min_out",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "acceptable_price",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "block_gap",
+          "type": 28,
+          "typeArguments": null
+        },
+        {
+          "name": "time_gap",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 17,
+      "type": "struct FixedVecAssetIdSize5",
+      "components": [
+        {
+          "name": "len",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "item0",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "item1",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "item2",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "item3",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "item4",
+          "type": 8,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 18,
+      "type": "struct RawVec",
+      "components": [
+        {
+          "name": "ptr",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "cap",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": [5]
+    },
+    {
+      "typeId": 19,
+      "type": "struct SetCallbackGasLimit",
+      "components": [
+        {
+          "name": "callback_gas_limit",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 20,
+      "type": "struct SetCustomCallbackGasLimit",
+      "components": [
+        {
+          "name": "callback_target",
+          "type": 12,
+          "typeArguments": null
+        },
+        {
+          "name": "callback_gas_limit",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 21,
+      "type": "struct SetDelayValues",
+      "components": [
+        {
+          "name": "min_block_delay_keeper",
+          "type": 28,
+          "typeArguments": null
+        },
+        {
+          "name": "min_time_delay_public",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "max_time_delay",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 22,
+      "type": "struct SetIsLeverageEnabled",
+      "components": [
+        {
+          "name": "is_leverage_enabled",
+          "type": 3,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 23,
+      "type": "struct SetMinExecutionFee",
+      "components": [
+        {
+          "name": "min_execution_fee",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 24,
+      "type": "struct SetPositionKeeper",
+      "components": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "is_active",
+          "type": 3,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 25,
+      "type": "struct SetRequestKeysStartValues",
+      "components": [
+        {
+          "name": "increase_position_request_keys_start",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "decrease_position_request_keys_start",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 26,
+      "type": "struct Vec",
+      "components": [
+        {
+          "name": "buf",
+          "type": 18,
+          "typeArguments": [
+            {
+              "name": "",
+              "type": 5,
+              "typeArguments": null
+            }
+          ]
+        },
+        {
+          "name": "len",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": [5]
+    },
+    {
+      "typeId": 27,
+      "type": "u256",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 28,
+      "type": "u32",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 29,
+      "type": "u64",
+      "components": null,
+      "typeParameters": null
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [
+        {
+          "name": "key",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee_receiver",
+          "type": 7,
+          "typeArguments": null
+        }
+      ],
+      "name": "cancel_decrease_position",
+      "output": {
+        "name": "",
+        "type": 3,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "key",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee_receiver",
+          "type": 7,
+          "typeArguments": null
+        }
+      ],
+      "name": "cancel_increase_position",
+      "output": {
+        "name": "",
+        "type": 3,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "path",
+          "type": 26,
+          "typeArguments": [
+            {
+              "name": "",
+              "type": 8,
+              "typeArguments": null
+            }
+          ]
+        },
+        {
+          "name": "index_asset",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "acceptable_price",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "min_out",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "withdraw_eth",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "callback_target",
+          "type": 12,
+          "typeArguments": null
+        }
+      ],
+      "name": "create_decrease_position",
+      "output": {
+        "name": "",
+        "type": 2,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "path",
+          "type": 26,
+          "typeArguments": [
+            {
+              "name": "",
+              "type": 8,
+              "typeArguments": null
+            }
+          ]
+        },
+        {
+          "name": "index_asset",
+          "type": 8,
+          "typeArguments": null
+        },
+        {
+          "name": "amount_in",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "min_out",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 3,
+          "typeArguments": null
+        },
+        {
+          "name": "acceptable_price",
+          "type": 27,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "referral_code",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "callback_target",
+          "type": 12,
+          "typeArguments": null
+        }
+      ],
+      "name": "create_increase_position",
+      "output": {
+        "name": "",
+        "type": 2,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "key",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee_receiver",
+          "type": 7,
+          "typeArguments": null
+        }
+      ],
+      "name": "execute_decrease_position",
+      "output": {
+        "name": "",
+        "type": 3,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "end_index_",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee_receiver",
+          "type": 7,
+          "typeArguments": null
+        }
+      ],
+      "name": "execute_decrease_positions",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "key",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee_receiver",
+          "type": 7,
+          "typeArguments": null
+        }
+      ],
+      "name": "execute_increase_position",
+      "output": {
+        "name": "",
+        "type": 3,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "end_index_",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "execution_fee_receiver",
+          "type": 7,
+          "typeArguments": null
+        }
+      ],
+      "name": "execute_increase_positions",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "key",
+          "type": 2,
+          "typeArguments": null
+        }
+      ],
+      "name": "get_decrease_position_request_path",
+      "output": {
+        "name": "",
+        "type": 26,
+        "typeArguments": [
+          {
+            "name": "",
+            "type": 8,
+            "typeArguments": null
+          }
+        ]
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "key",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "name": "get_increase_position_request_keys",
+      "output": {
+        "name": "",
+        "type": 2,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "key",
+          "type": 2,
+          "typeArguments": null
+        }
+      ],
+      "name": "get_increase_position_request_path",
+      "output": {
+        "name": "",
+        "type": 26,
+        "typeArguments": [
+          {
+            "name": "",
+            "type": 8,
+            "typeArguments": null
+          }
+        ]
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "index",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "name": "get_request_key",
+      "output": {
+        "name": "",
+        "type": 2,
+        "typeArguments": null
+      },
+      "attributes": null
+    },
+    {
+      "inputs": [],
+      "name": "get_request_queue_lengths",
+      "output": {
+        "name": "",
+        "type": 1,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "base_position_manager",
+          "type": 12,
+          "typeArguments": null
+        },
+        {
+          "name": "vault",
+          "type": 12,
+          "typeArguments": null
+        },
+        {
+          "name": "min_execution_fee",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "name": "initialize",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "callback_gas_limit",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "name": "set_callback_gas_limit",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "callback_target",
+          "type": 12,
+          "typeArguments": null
+        },
+        {
+          "name": "callback_gas_limit",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "name": "set_custom_callback_gas_limit",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "min_block_delay_keeper",
+          "type": 28,
+          "typeArguments": null
+        },
+        {
+          "name": "min_time_delay_public",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "max_time_delay",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "name": "set_delay_values",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "is_leverage_enabled",
+          "type": 3,
+          "typeArguments": null
+        }
+      ],
+      "name": "set_is_leverage_enabled",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "min_execution_fee",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "name": "set_min_execution_fee",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "account",
+          "type": 7,
+          "typeArguments": null
+        },
+        {
+          "name": "is_active",
+          "type": 3,
+          "typeArguments": null
+        }
+      ],
+      "name": "set_position_keeper",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "increase_position_request_keys_start",
+          "type": 29,
+          "typeArguments": null
+        },
+        {
+          "name": "decrease_position_request_keys_start",
+          "type": 29,
+          "typeArguments": null
+        }
+      ],
+      "name": "set_request_key_start_values",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    }
+  ],
+  "loggedTypes": [
+    {
+      "logId": "5432468599230875534",
+      "loggedType": {
+        "name": "",
+        "type": 4,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "965446384986268788",
+      "loggedType": {
+        "name": "",
+        "type": 10,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "1869979297779901185",
+      "loggedType": {
+        "name": "",
+        "type": 11,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "18125037302182586744",
+      "loggedType": {
+        "name": "",
+        "type": 13,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "3501514529511635760",
+      "loggedType": {
+        "name": "",
+        "type": 14,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "2178207865127401266",
+      "loggedType": {
+        "name": "",
+        "type": 15,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "10134491329022734570",
+      "loggedType": {
+        "name": "",
+        "type": 9,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "351519950139731720",
+      "loggedType": {
+        "name": "",
+        "type": 16,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "13243139755854978585",
+      "loggedType": {
+        "name": "",
+        "type": 19,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "12178245034243269273",
+      "loggedType": {
+        "name": "",
+        "type": 20,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "15440434453681625581",
+      "loggedType": {
+        "name": "",
+        "type": 21,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "4386619036587774097",
+      "loggedType": {
+        "name": "",
+        "type": 22,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "14964064327572977771",
+      "loggedType": {
+        "name": "",
+        "type": 23,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "1654113172866008222",
+      "loggedType": {
+        "name": "",
+        "type": 24,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "3736181703835430385",
+      "loggedType": {
+        "name": "",
+        "type": 25,
+        "typeArguments": []
+      }
+    }
+  ],
+  "messagesTypes": [],
+  "configurables": []
+}

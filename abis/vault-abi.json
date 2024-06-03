@@ -1,0 +1,1296 @@
+{
+  "encoding": "1",
+  "types": [
+    {
+      "typeId": 0,
+      "type": "()",
+      "components": [],
+      "typeParameters": null
+    },
+    {
+      "typeId": 1,
+      "type": "b256",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 2,
+      "type": "bool",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 3,
+      "type": "enum Error",
+      "components": [
+        {
+          "name": "VaultForbiddenNotGov",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultAlreadyInitialized",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultForbiddenNotManager",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidMsgCaller",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultReceiverCannotBeZero",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultAssetNotWhitelisted",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidAssetAmount",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidUsdgAmount",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidRedemptionAmount",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidAmountOut",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidMintAmountGtU64Max",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidUSDGBurnAmountGtU64Max",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultSwapsNotEnabled",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultPoolAmountLtBuffer",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidAmountIn",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultAssetInNotWhitelisted",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultAssetOutNotWhitelisted",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultAssetsAreEqual",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInsufficientCollateralForFees",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultAccountCannotBeZero",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultCollateralShouldBeWithdrawn",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultSizeMustBeMoreThanCollateral",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidPosition",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidPositionSize",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultLeverageNotEnabled",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultLongCollateralIndexAssetsMismatch",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultLongCollateralAssetNotWhitelisted",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultLongCollateralAssetMustNotBeStableAsset",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultShortCollateralAssetNotWhitelisted",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultShortCollateralAssetMustBeStableAsset",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultShortIndexAssetMustNotBeStableAsset",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultShortIndexAssetNotShortable",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultPositionCannotBeLiquidated",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultInvalidLiquidator",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultEmptyPosition",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultPositionSizeExceeded",
+          "type": 0,
+          "typeArguments": null
+        },
+        {
+          "name": "VaultPositionCollateralExceeded",
+          "type": 0,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 4,
+      "type": "str",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 5,
+      "type": "struct Account",
+      "components": [
+        {
+          "name": "value",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "is_contract",
+          "type": 2,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 6,
+      "type": "struct AssetId",
+      "components": [
+        {
+          "name": "bits",
+          "type": 1,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 7,
+      "type": "struct BuyUSDG",
+      "components": [
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "asset_amount",
+          "type": 24,
+          "typeArguments": null
+        },
+        {
+          "name": "usdg_amount",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "fee_basis_points",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 8,
+      "type": "struct ClosePosition",
+      "components": [
+        {
+          "name": "key",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "size",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "average_price",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "entry_funding_rate",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "reserve_amount",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "realized_pnl",
+          "type": 18,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 9,
+      "type": "struct CollectMarginFees",
+      "components": [
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "fee_usd",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "fee_assets",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 10,
+      "type": "struct CollectSwapFees",
+      "components": [
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "fee_usd",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "fee_assets",
+          "type": 24,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 11,
+      "type": "struct ContractId",
+      "components": [
+        {
+          "name": "bits",
+          "type": 1,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 12,
+      "type": "struct DecreasePosition",
+      "components": [
+        {
+          "name": "key",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_delta",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "price",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "fee",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 13,
+      "type": "struct DirectPoolDeposit",
+      "components": [
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "amount",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 14,
+      "type": "struct IncreasePosition",
+      "components": [
+        {
+          "name": "key",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_delta",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "price",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "fee",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 15,
+      "type": "struct LiquidatePosition",
+      "components": [
+        {
+          "name": "key",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "size",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "reserve_amount",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "realized_pnl",
+          "type": 18,
+          "typeArguments": null
+        },
+        {
+          "name": "mark_price",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 16,
+      "type": "struct SellUSDG",
+      "components": [
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "asset_amount",
+          "type": 24,
+          "typeArguments": null
+        },
+        {
+          "name": "usdg_amount",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "fee_basis_points",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 17,
+      "type": "struct SetGov",
+      "components": [
+        {
+          "name": "new_gov",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 18,
+      "type": "struct Signed256",
+      "components": [
+        {
+          "name": "value",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "is_neg",
+          "type": 2,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 19,
+      "type": "struct Swap",
+      "components": [
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "asset_in",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "asset_out",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "amount_in",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "amount_out",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "amount_out_after_fees",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "fee_basis_points",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 20,
+      "type": "struct UpdatePnl",
+      "components": [
+        {
+          "name": "key",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "has_profit",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "delta",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 21,
+      "type": "struct UpdatePosition",
+      "components": [
+        {
+          "name": "key",
+          "type": 1,
+          "typeArguments": null
+        },
+        {
+          "name": "size",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "average_price",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "entry_funding_rate",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "reserve_amount",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "realized_pnl",
+          "type": 18,
+          "typeArguments": null
+        },
+        {
+          "name": "mark_price",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 22,
+      "type": "struct WithdrawFees",
+      "components": [
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "amount",
+          "type": 23,
+          "typeArguments": null
+        }
+      ],
+      "typeParameters": null
+    },
+    {
+      "typeId": 23,
+      "type": "u256",
+      "components": null,
+      "typeParameters": null
+    },
+    {
+      "typeId": 24,
+      "type": "u64",
+      "components": null,
+      "typeParameters": null
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "buy_usdg",
+      "output": {
+        "name": "",
+        "type": 23,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_delta",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "decrease_position",
+      "output": {
+        "name": "",
+        "type": 23,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        }
+      ],
+      "name": "direct_pool_deposit",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "get_gov",
+      "output": {
+        "name": "",
+        "type": 5,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "get_vault_storage",
+      "output": {
+        "name": "",
+        "type": 11,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "get_vault_utils",
+      "output": {
+        "name": "",
+        "type": 11,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "size_delta",
+          "type": 23,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 2,
+          "typeArguments": null
+        }
+      ],
+      "name": "increase_position",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "gov",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "vault_utils",
+          "type": 11,
+          "typeArguments": null
+        },
+        {
+          "name": "vault_storage",
+          "type": 11,
+          "typeArguments": null
+        }
+      ],
+      "name": "initialize",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "account",
+          "type": 5,
+          "typeArguments": null
+        },
+        {
+          "name": "collateral_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "is_long",
+          "type": 2,
+          "typeArguments": null
+        },
+        {
+          "name": "fee_receiver",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "liquidate_position",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "sell_usdg",
+      "output": {
+        "name": "",
+        "type": 23,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "new_gov",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "set_gov",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read", "write"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "asset_in",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "asset_out",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "swap",
+      "output": {
+        "name": "",
+        "type": 24,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "collateral_asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "index_asset",
+          "type": 6,
+          "typeArguments": null
+        }
+      ],
+      "name": "update_cumulative_funding_rate",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "asset",
+          "type": 6,
+          "typeArguments": null
+        },
+        {
+          "name": "receiver",
+          "type": 5,
+          "typeArguments": null
+        }
+      ],
+      "name": "withdraw_fees",
+      "output": {
+        "name": "",
+        "type": 0,
+        "typeArguments": null
+      },
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": ["read"]
+        }
+      ]
+    }
+  ],
+  "loggedTypes": [
+    {
+      "logId": "5432468599230875534",
+      "loggedType": {
+        "name": "",
+        "type": 3,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "17200521833312526367",
+      "loggedType": {
+        "name": "",
+        "type": 10,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "1939084879272937264",
+      "loggedType": {
+        "name": "",
+        "type": 7,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "7903247393465088968",
+      "loggedType": {
+        "name": "",
+        "type": 9,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "10098701174489624218",
+      "loggedType": {
+        "name": "",
+        "type": 4,
+        "typeArguments": null
+      }
+    },
+    {
+      "logId": "3048767629351944025",
+      "loggedType": {
+        "name": "",
+        "type": 20,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "17276184846747919138",
+      "loggedType": {
+        "name": "",
+        "type": 12,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "15769499082890885600",
+      "loggedType": {
+        "name": "",
+        "type": 21,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "1607443183907089103",
+      "loggedType": {
+        "name": "",
+        "type": 8,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "5001893531996297999",
+      "loggedType": {
+        "name": "",
+        "type": 13,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "16595060151443604364",
+      "loggedType": {
+        "name": "",
+        "type": 14,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "7908178656321864902",
+      "loggedType": {
+        "name": "",
+        "type": 15,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "13474182864263634091",
+      "loggedType": {
+        "name": "",
+        "type": 16,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "17104960795062510771",
+      "loggedType": {
+        "name": "",
+        "type": 17,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "12346912202658160608",
+      "loggedType": {
+        "name": "",
+        "type": 19,
+        "typeArguments": []
+      }
+    },
+    {
+      "logId": "12597442371930058247",
+      "loggedType": {
+        "name": "",
+        "type": 22,
+        "typeArguments": []
+      }
+    }
+  ],
+  "messagesTypes": [],
+  "configurables": []
+}
